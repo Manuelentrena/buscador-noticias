@@ -5,9 +5,10 @@ import PropTypes from "prop-types";
 const ListadoNoticias = ({ noticias }) => {
   return (
     <div className="row">
-      {noticias.map((noticia, index) => (
-        <Noticia key={index} noticia={noticia} />
-      ))}
+      {noticias &&
+        noticias.map((noticia, index) => (
+          <Noticia key={index} noticia={noticia} />
+        ))}
     </div>
   );
 };
