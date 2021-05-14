@@ -1,0 +1,15 @@
+.container_fecha {
+  display: flex;
+}
+
+.fecha {
+  margin-right: 1rem !important;
+  color: #f50057;
+}
+
+.medio {
+  color: #fff;
+  background-color: #2962ff;
+  padding: 0.1rem 0.3rem;
+  border-radius: 5px;
+}

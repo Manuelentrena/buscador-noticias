@@ -11,11 +11,12 @@ function App() {
   //Peticion API de noticas
   useEffect(() => {
     const consultarAPI = async () => {
-      const KEY = "5c374784c1f347178b1c7ea13fbd8443";
-      const url = `https://newsapi.org/v2/top-headlines?country=ve&category=${categoria}&apiKey=${KEY}`;
+      const KEY = "55f53eeb49e5b634d4d7737a609e4b25";
+      const url = `https://gnews.io/api/v4/search?q=${categoria}&country=es&token=${KEY}`;
 
       const respuesta = await fetch(url);
       const data = await respuesta.json();
+      console.log(data);
       setNoticias(data.articles);
     };
     consultarAPI();
